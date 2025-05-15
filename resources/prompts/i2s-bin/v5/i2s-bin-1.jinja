@@ -1,0 +1,19 @@
+Solve the provided Bongard Problem. Respond in json using the following format.
+If the first test image aligns with the LEFT side of the problem and the second test image aligns with the RIGHT side, answer 0.
+If the first test image aligns with the RIGHT side and the second test image aligns with the LEFT side, answer 1.
+EXAMPLE START
+RESPONSE
+{
+    "concept": "line is present vs no line is present",
+    "explanation": "The first test image shows a sailboat with ropes hanging from the sails. These ropes form visible lines, similar to the items on the LEFT, such as the telephone cord, power lines, and shoelaces. In contrast, the second test image shows a motorized launch boat, which typically lacks visible sails or ropes. This matches the RIGHT examples, where no prominent lines are present, like the smartphone, slip-on sandals, or park bench.",
+    "answer": 0
+}
+EXAMPLE END
+EXAMPLE START
+RESPONSE
+{
+    "concept": "two circles vs one circle",
+    "explanation": "In the first test image, a single donut serves as the main round element, matching the RIGHT examples where one circular object dominates the scene, such as the soup bowl or drum. In contrast, the second test image shows a tennis net with two balls, representing two circular elements, aligning with the LEFT examples where pairs of circular objects appear, like the bagels, apples, or camera lenses.",
+    "answer": 1
+}
+EXAMPLE END

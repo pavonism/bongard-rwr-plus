@@ -1,0 +1,55 @@
+Select the concept that correctly describes the image. Respond in json using the following format.
+EXAMPLE START
+REQUEST
+{
+    "concepts": [
+        {
+            "left": "Parallel lines",
+            "right": "Perpendicular lines",
+            "label": 1
+        },
+        {
+            "left": "Negative slope",
+            "right": "Positive slope",
+            "label": 2
+        }
+    ]
+}
+RESPONSE
+{
+    "explanation": "The image presents several lines that don't intersect.",
+    "label": 1
+}
+EXAMPLE END
+EXAMPLE START
+REQUEST
+{
+    "concepts": [
+        {
+            "left": "Two shapes",
+            "right": "Six shapes",
+            "label": 1
+        },
+        {
+            "left": "A cycle",
+            "right": "No cycle",
+            "label": 2
+        },
+        {
+            "left": "Similar shapes",
+            "right": "Different shapes",
+            "label": 3
+        },
+        {
+            "left": "Small variance",
+            "right": "Large variance",
+            "label": 4
+        }
+    ]
+}
+RESPONSE
+{
+    "explanation": "All images on the left side feature circles of similar size, while the images on the right side present triangles, squares, and lines.",
+    "label": 3
+}
+EXAMPLE END

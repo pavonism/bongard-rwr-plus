@@ -1,0 +1,58 @@
+Use the descriptions below to solve the provided Bongard Problem. Respond in json using the following format.
+EXAMPLE START
+REQUEST
+{
+    "left_descriptions": [
+        "A wired telephone with a coiled cord resting on a wooden table",
+        "Power lines stretching across a clear blue sky with birds perched on them",
+        "A clothes drying rack with colorful clothes hanging under the sunlight",
+        "A swing hanging from a tree branch in a park with a child playing nearby",
+        "A needle with thread passing through fabric, placed on a sewing table",
+        "A pair of shoes with neatly tied laces placed on a tiled floor"
+    ],
+    "right_descriptions": [
+        "A smartphone with a cracked screen lying on a desk with visible damage",
+        "A bird flying freely in the sky with its wings spread wide",
+        "A pile of folded clothes neatly stacked on a shelf in a wardrobe",
+        "A park bench surrounded by fallen leaves in an autumn setting",
+        "A piece of fabric with intricate embroidery placed on a sewing table",
+        "A pair of slip-on sandals placed on a carpeted floor near a doorway"
+    ],
+    "test_description": "A sailboat with its sails fully open gliding across a calm lake under a clear sky"
+}
+RESPONSE
+{
+    "concept": "line is present vs no line is present",
+    "explanation": "The first test image presents a sailboat with ropes hanging the sails. The ropes are lines, the same as items on the LEFT, like the telephone cord, power lines, and shoelaces.",
+    "answer": "LEFT"
+
+}
+EXAMPLE END
+EXAMPLE START
+REQUEST
+{
+    "left_descriptions": [
+        "Two bagels on a cutting board beside a knife",
+        "A pair of headphones resting on a desk with the earcups facing up",
+        "Two apples placed next to each other on a picnic blanket",
+        "A pair of camera lenses lined up on a shelf",
+        "A bicycle lying on the ground with both wheels visible",
+        "A snowman with two stacked parts, one above the other"
+    ],
+    "right_descriptions": [
+        "Two forks placed on a plate",
+        "A dartboard mounted on a brick wall with scores written on two papers beside it",
+        "A spotlight shining onto a dark floor surrounded by cables",
+        "A pie baking in the oven next to a tray of gingers bread men",
+        "A record spinning on a turntable with a hand reaching toward it",
+        "A teacup seen from above with steam rising",
+    ],
+    "test_description": "An octagonal dessert plate holding a single donut with sprinkles"
+}
+RESPONSE
+{
+    "concept": "two circles vs one circle",
+    "explanation": "The donut sits alone as the primary round element in the scene, matching the RIGHT examples where a single rounded object takes visual focus amid other details, like the soup bowl or drum.",
+    "answer": "RIGHT"
+}
+EXAMPLE END

@@ -1,0 +1,19 @@
+[project]
+name = "src"
+version = "0.0.1"
+description = "Bongard-RWR+"
+dependencies = [
+    "diffusers",
+    "Jinja2",
+    "mistralai",
+    "numpy",
+    "openai-clip",
+    "pandas",
+    "pydantic",
+    "scikit-learn",
+    "torch",
+    "tqdm",
+]
+[build-system]
+build-backend = "flit_core.buildapi"
+requires = ["flit_core >=3.2,<4"]
